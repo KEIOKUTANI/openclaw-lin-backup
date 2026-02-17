@@ -4,12 +4,15 @@ node_modules/
 
 # Environment variables and secrets
 .env
-.env.local
+.env.*
+.env*
 *.key
 *.pem
 *_SECRET*
 *_TOKEN*
 *credentials*
+*secret*
+*SECRET*
 
 # Logs
 *.log
