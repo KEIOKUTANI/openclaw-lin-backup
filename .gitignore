@@ -1,0 +1,29 @@
+# Node modules and dependencies
+node_modules/
+.npm/
+
+# Environment variables and secrets
+.env
+.env.*
+.env*
+*.key
+*.pem
+*_SECRET*
+*_TOKEN*
+*credentials*
+*secret*
+*SECRET*
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.swp
+*~
+.DS_Store
+
+# Build outputs
+dist/
+build/

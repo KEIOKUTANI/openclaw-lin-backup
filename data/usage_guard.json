@@ -1,0 +1,19 @@
+{
+  "sessions": [
+    {
+      "timestamp": "2026-02-28T20:17:32.146367",
+      "tokens_in": 30000,
+      "tokens_out": 13000,
+      "total_tokens": 43000,
+      "cost": 0.25
+    }
+  ],
+  "daily_totals": {
+    "2026-02-28": {
+      "tokens": 43000,
+      "cost": 0.25,
+      "sessions": 1
+    }
+  },
+  "alerts": []
+}
