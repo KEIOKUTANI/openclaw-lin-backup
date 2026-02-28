@@ -130,7 +130,58 @@ If abnormal usage detected:
 4. Identify cause (loop? mass generation?)
 5. Kill processes if needed: `pkill -f python`
 
-**Last Updated**: 2026-02-28 20:20 JST
+**Last Updated**: 2026-02-28 23:20 JST
+
+---
+
+## Crypto Trading System Setup (2026-02-28 23:20)
+
+### ✅ Completed Infrastructure
+
+**Location**: `/root/openclaw_data/lin/crypto-trading/`
+
+**Components**:
+1. Exchange Connector (ccxt-based)
+   - Bybit integration ready
+   - Multi-exchange support (Binance, OKX)
+   - Real-time data, order execution
+
+2. Risk Manager
+   - Bankroll: $1,850
+   - Risk multiplier: 50x (2% per trade)
+   - Max position: $37/trade
+   - Auto PnL tracking
+
+3. Simple Strategy (RSI)
+   - RSI < 30: Buy signal
+   - RSI > 70: Sell signal
+   - 2% stop loss, 4% take profit
+   - Dry run tested
+
+### 📋 Next Steps
+
+**User Action Required**:
+1. Create Bybit API key (Read + Trade permissions)
+2. Set in `.env`: BYBIT_API_KEY, BYBIT_API_SECRET
+
+**Then**:
+```bash
+cd /root/openclaw_data/lin/crypto-trading
+source .venv/bin/activate
+python3 exchange_connector.py  # Test connection
+python3 simple_strategy.py      # Dry run
+```
+
+**Files**:
+- `README.md` - Full documentation
+- `setup_plan.md` - Detailed roadmap
+- `exchange_connector.py` - Exchange API wrapper
+- `risk_manager.py` - Position sizing & tracking
+- `simple_strategy.py` - RSI trading strategy
+
+**Status**: Ready for API keys → Testing → Live trading
+
+**Last Updated**: 2026-02-28 23:20 JST
 
 ---
 
